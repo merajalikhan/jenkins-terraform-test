@@ -7,7 +7,7 @@ pipeline {
                 git branch: 'main', credentialsId: '715ea8e8-2cff-4c10-b45a-6ff6bbe71fd2', url: 'https://github.com/merajalikhan/jenkins-terraform-test.git'
             }
         }
-        stage('Terraform Init') {
+        stage('Terraform Initialize') {
             steps {
                 //sh 'terraform init'
                 print('terraform init...')
