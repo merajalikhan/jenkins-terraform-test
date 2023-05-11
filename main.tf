@@ -5,10 +5,10 @@ terraform {
     }
   }
 }
-provider "databricks" {
-    host =  var.databricks_host 
-    token = var.pa_token 
-}
+provider "databricks" {}
+   # host =  var.databricks_host 
+   # token = var.pa_token 
+#}
 
 data "databricks_current_user" "logged_in_user" {
     
