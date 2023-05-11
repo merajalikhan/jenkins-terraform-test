@@ -42,7 +42,7 @@
 #       with:
 #         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-name: 'Terraform'
+name: 'Deploy Databricks Notebooks and Jobs'
 
 on:
   push:
@@ -54,9 +54,9 @@ permissions:
 
 jobs:
   terraform:
-    name: 'Terraform'
+    name: 'Databrick Deployment'
     runs-on: ubuntu-latest
-    environment: production
+    environment: development
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
